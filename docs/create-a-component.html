@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Vue Bone</title>
+    </head>
+
+    <body>
+
+        <div id="app">
+            <p>{{ message }}</p>
+            <Hello></Hello>
+        </div>
+        <script src="https://unpkg.com/vue/dist/vue.js"></script>
+        <script type="text/javascript">
+            Vue.component('Hello', {
+                template: '<p>Hello, custom vue component</p>'                        
+            });
+            new Vue({
+                el: '#app',
+                data: {
+                    message: 'Hello Vue.js!'
+                }
+            })
+        </script>    
+    </body>
+</html>
+
+
+
